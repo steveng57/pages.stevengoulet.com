@@ -17,7 +17,8 @@ With increased revenues from Canadian Oil, this changed in 2008, with Canada hav
 
 All dollars are adjusted to 2023 US, in billions, the latest year for which full statistics are available.  
 
-**In total, since 1961 the United States has had a trade surplus from Canada, totalling over $300 Billion US.**
+> **In total, since 1961 the United States has had a trade surplus from Canada, totalling over $300 Billion US**
+{: .prompt-tip }
 
 Positive numbers are a US surplus / Canada deficit.  
 Negative numbers are a Canada surplus / US deficit.
