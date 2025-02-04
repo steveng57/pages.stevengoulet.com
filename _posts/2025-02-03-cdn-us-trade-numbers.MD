@@ -6,8 +6,24 @@ last_modified_at: 2025-02-04 11:46:36 -0500
 categories: [Politics, US]
 media_subpath: /assets/img/posts/cdn-us-trade-numbers
 ---
+## Canada / US Trade
+Since the early 60's, considered the modern era of post World War II trade, the trade surpluses and deficits between Canada and the US has changed greatly.  
+
+In the 60's and 70's, trade was small compared to today, and the surplus/deficit numbers reflect that.
+
+As trade expanded, and with the signing of NAFTA in 1994, those numbers increased with the United States having a surplus in most years from 1978 to 2008.
+
+With increased revenues from Canadian Oil, this changed in 2008, with Canada having a surplus from them to the present.
+
+All dollars are adjusted to 2023 US, in billions, the latest year for which full statistics are available.  
+
+**In total, since 1961 the United States has had a trade surplus from Canada, totalling over $300 Billion US.**
 
 {% include html-side.html img="cdn-us-trade-numbers.jpeg" align = "center-full" %}
+(click to zoom in)
+## The Data
+
+The data for the above
 
 | Year | Trade Deficit/Surplus | CPI (Average Annual) | 2023 Dollars |
 |------|-----------------------|----------------------|--------------|
@@ -78,3 +94,11 @@ media_subpath: /assets/img/posts/cdn-us-trade-numbers
 |------|-----------------------|----------------------|--------------|
 | Total|                       |                      | 304.20       |
 | Average|                     |                      | 4.83         |
+
+## Sources
+
+- [Statistics Canada](https://www150.statcan.gc.ca/n1/en/type/data?MM=41)
+- [United States Census Bureau](https://www.census.gov/foreign-trade/balance/c1220.html)
+- [Bank of Canada](https://www.bankofcanada.ca/rates/price-indexes/cpi)
+- [World Bank](https://databank.worldbank.org/source/world-development-indicators)
+- [International Monetary Fund (IMF)](https://www.imf.org/en/Data)	
