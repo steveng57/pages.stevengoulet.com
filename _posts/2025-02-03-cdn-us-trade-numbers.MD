@@ -1,6 +1,7 @@
 ---
 layout: post
-title: A Look at Canada vs US Trade Deficits and Surpluses Through the Years
+title: Canada / US Trade History
+description: A look at Canada vs US trade deficits and surpluses through the years
 date: 2025-02-04 11:46:33 -0500
 last_modified_at: 2025-02-04 11:46:36 -0500
 categories: [Politics, US]
@@ -101,8 +102,7 @@ The data for the above
 | 1961 | -0.26                 | 30                   | -2.65        |
 
 |------|-----------------------|----------------------|--------------|
-| **Total**|                       |                      | **304.20**       |
-| Average|                     |                      | 4.83         |
+| **Total**|                       |                      | **$304.20 Billion**       |
 
 ## Sources
 

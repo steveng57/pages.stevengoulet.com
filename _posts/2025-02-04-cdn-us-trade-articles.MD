@@ -1,10 +1,14 @@
 ---
 layout: post
-title: Canada/US Trade Articles
+title: Canada / US Trade Articles
+description: Articles on the Canada/US trade surplus/deficit from reliable sources
 date: 2025-02-04 18:40:03 -0500
 last_modified_at: 2025-02-04 18:40:07 -0500
 categories: [Politics, US]
 tags: [Politics, Canada, US, Tariffs]
+image:
+  path: trade.png
+  alt: International Trade
 media_subpath: /assets/img/posts/cdn-us-trade-articles
 ---
 ## Canada / US Trade
