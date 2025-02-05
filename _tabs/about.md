@@ -4,5 +4,5 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
+> This website has been created in wake of the newly declared trade war from the US Administration against Canada
 {: .prompt-tip }
