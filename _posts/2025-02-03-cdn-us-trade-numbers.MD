@@ -17,7 +17,7 @@ In the 60's and 70's, trade was small compared to today, and the surplus/deficit
 
 As trade expanded, and with the signing of NAFTA in 1994, those numbers increased with the United States having a surplus in most years from 1978 to 2008.
 
-With increased revenues from Canadian Oil, this changed in 2008, with Canada having a surplus from them to the present.
+With increased revenues from Canadian oil, this changed in 2008, with Canada having a surplus from them to the present.  If oil is removed from the equation, the US would have a substantial trade surplus.
 
 All dollars are adjusted to 2023 US, in billions, the latest year for which full statistics are available.  
 
