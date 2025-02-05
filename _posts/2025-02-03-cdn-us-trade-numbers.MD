@@ -25,7 +25,8 @@ All dollars are adjusted to 2023 US, in billions, the latest year for which full
 {: .prompt-tip }
 
 Positive numbers are a US surplus / Canada deficit.  
-Negative numbers are a Canada surplus / US deficit.
+Negative numbers are a Canada surplus / US deficit.  
+Note that these numbers are for products only, and do not include services.  If we were to include services, the number would be tilted much more to a US surplus (roughly an additional $20B US in 2023).
 
 {% include html-side.html img="cdn-us-trade-numbers.jpeg" align = "center-full" %}
 Canada / US Trade from 9161 to 2023 (click to zoom)
