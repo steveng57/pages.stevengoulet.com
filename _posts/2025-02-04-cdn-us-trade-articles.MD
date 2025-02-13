@@ -21,3 +21,4 @@ Here is a list of articles on the Canada/US trade relationship, including a numb
 - [With tariffs and trade in the spotlight, what Trump means when he says America is ‘losing’ billions to Canada, others - CNN Business](https://edition.cnn.com/2025/01/16/economy/us-trade-deficit-trump-200-billion/index.html){{ site.tb }}
 - [Fact-checking Trump's executive order threatening tariffs on Canada - The Chronicle Journal](https://www.chroniclejournal.com/news/national/fact-checking-trumps-executive-order-threatening-tariffs-on-canada/article_43f884e9-f547-5941-8669-cbd77979e075.html){{ site.tb }}
 - [Canada–United States trade relations - Wikipedia](https://en.wikipedia.org/wiki/Canada%E2%80%93United_States_trade_relations){{ site.tb }}
+- [Drugs and Guns Coming North](https://www.cbc.ca/news/politics/trump-complaints-drugs-guns-border-1.7457605){{ site.tb }}
