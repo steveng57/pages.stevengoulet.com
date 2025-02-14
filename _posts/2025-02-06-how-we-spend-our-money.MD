@@ -67,4 +67,4 @@ This one is pretty tricky.  Although they are a Canadian subsidiary of their US 
 
 ## South of the Border
 
-To my American friends who read this.  I know that you are all against this action by your government (otherwise you are not a friend), so I implore you to keep up the fight to go back to some form of normalcy.  Things will never be the same, the trust is gone forever.  But we still need to get to a much better place.
+To my American friends who read this.  I know that you are all against this action by your government (otherwise you are not a friend), so I implore you to keep up the good fight to go back to some form of normalcy.  Things will never be the same, the trust is gone forever.  But we still need to get to a much better place.
