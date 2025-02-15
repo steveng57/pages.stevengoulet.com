@@ -36,4 +36,4 @@ Yes, I fully appreciate the irony of sending you to US based Social Media, but t
 
 ## A Handy Chart
 
-{% include html-side.html img="buy-canadian-brands.jpeg" align = "center-full" %}
+{% include html-side.html img="buy-canadian-brands.jpeg" align = "center-wide" caption = "Buy Canadian" %}
