@@ -33,6 +33,7 @@ Yes, I fully appreciate the irony of sending you to US based Social Media, but t
 - [Shopping Canadian: How to find made-in-Canada and Ontario brands and products amid Trump's 'tariff war'](https://www.toronto.com/news/shopping-canadian-how-to-find-made-in-canada-and-ontario-brands-and-products-amid-trumps/article_6a68e615-e61e-52c5-a16b-dfd7c82ce556.html){{ site.tb }}
 - [From made in Canada to product of Canada: How to make sense of Canadian labels](https://halifax.citynews.ca/2025/02/03/from-made-in-canada-to-product-of-canada-how-to-make-sense-of-canadian-labels/){{ site.tb }}
 - [What does 'made in Canada' even mean? Here's how to identify truly Canadian products](https://nationalpost.com/news/canada/identifying-canadian-products){{ site.tb }}
+- [A "Buy Canadian" guide published by National Post](https://www.msn.com/en-ca/money/topstories/made-in-canada-directory-shop-and-support-canadian-brands/ar-AA1AVsf7?ocid=msedgntp&pc=U531&cvid=9e3096272cf34a1e9cd487a4bb60ce2f&ei=57){{ site.tb }}
 
 ## A Handy Chart
 
