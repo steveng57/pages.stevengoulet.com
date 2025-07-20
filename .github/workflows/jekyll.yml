@@ -60,18 +60,12 @@ jobs:
         uses: actions/configure-pages@v5
         
       - name: Build with Jekyll
-        run: bundle exec jekyll build --destination ./pages --baseurl "${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
 
-      - name: List directory contents
-        run: ls -la ./pages
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./pages
-          name: pages
 
   deploy:
     environment:
@@ -83,5 +77,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          artifact_name: pages
