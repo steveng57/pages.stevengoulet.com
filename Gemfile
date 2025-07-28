@@ -34,4 +34,4 @@ end
 gem 'jekyll-include-cache', '~> 0.2.1'
 
 # Fixing the google-protobuf problem
-gem 'google-protobuf', '~> 4.29', '= 4.29.2'
+gem 'google-protobuf', '~> 4.31', '>= 4.31.1'
