@@ -29,6 +29,9 @@ url: "https://pages.stevengoulet.com"
 # The base URL of your site
 baseurl: ""
 
+# Configure Jekyll to use shared includes
+includes_dir: _includes_shared/_includes
+
 github:
   username: steveng57 # change to your github username
 
