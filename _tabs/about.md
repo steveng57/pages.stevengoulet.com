@@ -9,4 +9,4 @@ order: 4
 
 {% include clear-float.html break = 2 %}
 
-{% include mydatetime.html date = site.time lang = lang prefix=  "This site was last generated on: "%}
+{% include mydatetime.html date = site.time lang = lang prefix=  "This site was last generated on: "%}{: .post-meta .text-muted}
