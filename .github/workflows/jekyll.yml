@@ -23,11 +23,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive  # This is needed for _includes_shared
+          submodules: recursive  # This is needed for _shared
 
       - name: Update shared includes to latest
         run: |
-          git submodule update --remote _includes_shared
+          git submodule update --remote _shared
           git submodule status
 
       - name: Install dependencies
