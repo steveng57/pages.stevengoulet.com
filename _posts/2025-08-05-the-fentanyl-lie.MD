@@ -9,7 +9,7 @@ tags: [Politics, Canada, US, Trade, Fentanyl]
 media_subpath: /assets/img/posts/the-fentanyl-lie
 image:
   path: fentanyl.jpeg
-  alt: Real Trade Numbers
+  alt: The Fentanyl Lie
 ---
 # The Fentanyl Lie
 
@@ -48,7 +48,7 @@ Contrary to some recent political claims, the amount of fentanyl flowing from Ca
 
 ## ⚠️ Political Context
 
-- Former President Trump cited fentanyl as a reason for imposing **35% tariffs** on Canadian goods, claiming a “massive” flow from Canada.
+- Former President Trump cited fentanyl, without evidence, as a reason for imposing **35% tariffs** on Canadian goods, claiming a “massive” flow from Canada.
 - Experts and fact-checkers widely dispute this claim, calling it **misleading** and **inconsistent with federal data** [source](https://www.newsweek.com/fentanyl-trafficking-canada-mexico-border-trump-2040888){:target='_blank' rel='noopener noreferrer'}.
 
 ---
