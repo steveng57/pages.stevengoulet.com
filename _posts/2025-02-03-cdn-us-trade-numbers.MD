@@ -10,7 +10,6 @@ media_subpath: /assets/img/posts/cdn-us-trade-numbers
 image:
   path: cdn-us-trade-numbers.jpeg
   alt: Real Trade Numbers
-media_subpath: /assets/img/posts/cdn-us-trade-numbers
 ---
 ## Canada / US Trade
 Since the early 60's, considered the modern era of post World War II trade, the trade surpluses and deficits between Canada and the US has changed greatly.  
