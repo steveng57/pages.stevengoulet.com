@@ -45,7 +45,6 @@ Contrary to some recent political claims, the amount of fentanyl flowing from Ca
 - Canada has appointed a **Fentanyl Czar** and invested over **$1.3 billion** in border security and drug enforcement.
 - Recent operations like **Operation Blizzard** led to thousands of drug seizures, though only a small portion was destined for the U.S.
 - Canada has deployed **drones, helicopters, and surveillance towers** to monitor border activity.
-- The [Canada.ca fentanyl page](https://www.canada.ca/en/health-canada/services/substance-use/controlled-illegal-drugs/fentanyl.html){:target='_blank' rel='noopener noreferrer'} outlines how illegal fentanyl enters Canada and the risks it poses.
 - [FINTRAC’s Operational Alert](https://fintrac-canafe.canada.ca/intel/operation/iso-osi-eng.pdf){:target='_blank' rel='noopener noreferrer'} highlights efforts to disrupt money laundering tied to synthetic opioids like fentanyl.
 
 ---
