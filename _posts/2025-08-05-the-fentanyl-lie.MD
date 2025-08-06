@@ -23,13 +23,14 @@ Contrary to some recent political claims, the amount of fentanyl flowing from Ca
 
 ---
 
-## 📉 Fentanyl Seizures at the Northern Border
+## 📉 Fentanyl and the Northern Border
 
 - **Less than 1%** of fentanyl entering the U.S. is linked to Canadian sources.
 - Between **2022 and 2024**, only **27 kilograms** of fentanyl were seized at the northern border, compared to over **28,000 kilograms** at the southern border with Mexico.
 - In **fiscal year 2025**, U.S. Customs and Border Protection reported **33.6 kilograms** seized at the northern border—more than the previous three years combined, but still a tiny fraction compared to Mexico [source](https://www.newsweek.com/fentanyl-trafficking-canada-mexico-border-trump-2040888){:target='_blank' rel='noopener noreferrer'}.
 - Here is a look at fentanyl traffic across US borders, some fancy graphics updated monthly [USAFacts](https://usafacts.org/answers/how-much-fentanyl-is-seized-at-us-borders/country/united-states/){:target='_blank' rel='noopener noreferrer'}
 - A good, recent [article from NetNewsLedger](https://www.netnewsledger.com/2025/08/05/fact-check-how-much-fentanyl-actually-comes-from-canada-vs-president-trumps-claims/){:target='_blank' rel='noopener noreferrer'}
+- New data shows spike in US drugs and guns coming north: [cbc.ca](https://www.cbc.ca/news/politics/trump-complaints-drugs-guns-border-1.7457605){:target='_blank' rel='noopener noreferrer'}
 
 ---
 
