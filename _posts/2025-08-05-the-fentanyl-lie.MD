@@ -13,7 +13,9 @@ image:
 ---
 # The Fentanyl Lie
 
-The Trump Administration has repeatedly lied about a so-called "Fentanyl Crisis" with the drug supposed flowing freely over the US border.
+The US Administration has repeatedly lied about a so-called "Fentanyl Crisis" with the drug supposed flowing freely over the US border.
+
+**Spoiler alert**: Now I don't mean to point the finger at Mexico, they have enough challenges, but seriously the crisis is definitely not happening at the Canadian border.
 
 # CA🔁US - How Much Fentanyl Flows from Canada to the U.S.?
 
@@ -24,8 +26,10 @@ Contrary to some recent political claims, the amount of fentanyl flowing from Ca
 ## 📉 Fentanyl Seizures at the Northern Border
 
 - **Less than 1%** of fentanyl entering the U.S. is linked to Canadian sources.
-- Between **2022 and 2024**, only **59 pounds** of fentanyl were seized at the northern border, compared to **61,900 pounds** at the southern border with Mexico.
+- Between **2022 and 2024**, only **27 kilograms** of fentanyl were seized at the northern border, compared to over **28,000 kilograms** at the southern border with Mexico.
 - In **fiscal year 2025**, U.S. Customs and Border Protection reported **33.6 kilograms** seized at the northern border—more than the previous three years combined, but still a tiny fraction compared to Mexico [source](https://www.newsweek.com/fentanyl-trafficking-canada-mexico-border-trump-2040888){:target='_blank' rel='noopener noreferrer'}.
+- Here is a look at fentanyl traffic across US borders, some fancy graphics updated monthly [USAFacts](https://usafacts.org/answers/how-much-fentanyl-is-seized-at-us-borders/country/united-states/){:target='_blank' rel='noopener noreferrer'}
+- A good, recent [article from NetNewsLedger](https://www.netnewsledger.com/2025/08/05/fact-check-how-much-fentanyl-actually-comes-from-canada-vs-president-trumps-claims/){:target='_blank' rel='noopener noreferrer'}
 
 ---
 
@@ -48,10 +52,10 @@ Contrary to some recent political claims, the amount of fentanyl flowing from Ca
 
 ## ⚠️ Political Context
 
-- Former President Trump cited fentanyl, without evidence, as a reason for imposing **35% tariffs** on Canadian goods, claiming a “massive” flow from Canada.
+- The twice impeached, convicted US President cited fentanyl, without evidence, as a reason for imposing **35% tariffs** on Canadian goods, claiming a “massive” flow from Canada.
 - Experts and fact-checkers widely dispute this claim, calling it **misleading** and **inconsistent with federal data** [source](https://www.newsweek.com/fentanyl-trafficking-canada-mexico-border-trump-2040888){:target='_blank' rel='noopener noreferrer'}.
 
 ---
 
-> **Bottom Line**: While Canada is actively fighting fentanyl trafficking, the data shows that the vast majority of fentanyl entering the U.S. comes from Mexico—not Canada.
+> **The Reality**: While Canada is actively fighting fentanyl trafficking, the data shows that the vast majority of fentanyl entering the U.S. comes from Mexico—not Canada.
 {: .prompt-warning}
