@@ -17,7 +17,7 @@ jobs:
 
       - name: Run srss.exe to generate srss.json
         run: |
-          .\srss.exe -dr 1 -o ".\_data\srss.json"
+          .\srss.exe -o ".\_data\srss.json"
 
       - name: Set up GitHub credentials
         run: |
