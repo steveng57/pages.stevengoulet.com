@@ -1,0 +1,14 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sun (lower, orange) -->
+  <circle cx="60" cy="90" r="30" fill="#FFB347" stroke="#F76E11" stroke-width="4"/>
+  <!-- Horizon (darker, dusk) -->
+  <ellipse cx="60" cy="110" rx="50" ry="10" fill="#2C3E50"/>
+  <!-- Rays (orange) -->
+  <g>
+    <line x1="60" y1="70" x2="60" y2="50" stroke="#FFB347" stroke-width="4"/>
+    <line x1="100" y1="90" x2="80" y2="90" stroke="#FFB347" stroke-width="4"/>
+    <line x1="20" y1="90" x2="40" y2="90" stroke="#FFB347" stroke-width="4"/>
+    <line x1="85" y1="105" x2="75" y2="95" stroke="#FFB347" stroke-width="4"/>
+    <line x1="35" y1="105" x2="45" y2="95" stroke="#FFB347" stroke-width="4"/>
+  </g>
+</svg>
