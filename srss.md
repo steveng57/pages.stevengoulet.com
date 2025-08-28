@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Sunrise Sunset
+description: Sunrise and Sunset calculations for a given location, defaulting to Manotick, ON, CA
 ---
 
 {% assign srss = site.data.srss %}
