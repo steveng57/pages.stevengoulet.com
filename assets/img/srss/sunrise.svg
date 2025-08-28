@@ -1,11 +1,111 @@
-<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="60" cy="70" r="30" fill="#FFD93B" stroke="#F4B400" stroke-width="4"/>
-  <ellipse cx="60" cy="100" rx="50" ry="10" fill="#A3D8F4"/>
-  <g>
-    <line x1="60" y1="20" x2="60" y2="40" stroke="#FFD93B" stroke-width="4"/>
-    <line x1="100" y1="70" x2="80" y2="70" stroke="#FFD93B" stroke-width="4"/>
-    <line x1="20" y1="70" x2="40" y2="70" stroke="#FFD93B" stroke-width="4"/>
-    <line x1="85" y1="45" x2="75" y2="55" stroke="#FFD93B" stroke-width="4"/>
-    <line x1="35" y1="45" x2="45" y2="55" stroke="#FFD93B" stroke-width="4"/>
+<!-- ========================= -->
+<!--         SUNRISE           -->
+<!-- ========================= -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-labelledby="sunriseTitle sunriseDesc">
+  <title id="sunriseTitle">Serene Sunrise over a Calm Sea</title>
+  <desc id="sunriseDesc">A warm sun emerges at the horizon with gentle clouds, soft rays and subtle grain over a blue sea.</desc>
+
+  <defs>
+    <clipPath id="circleMask">
+      <circle cx="300" cy="300" r="300" />
+    </clipPath>
+    <!-- Sky gradient -->
+    <linearGradient id="sunrise-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0D1B3D"/>
+      <stop offset="45%" stop-color="#3A4E8A"/>
+      <stop offset="70%" stop-color="#FFD1A1"/>
+      <stop offset="100%" stop-color="#FFE7C6"/>
+    </linearGradient>
+
+    <!-- Sun glow -->
+    <radialGradient id="sunrise-sun" cx="50%" cy="60%" r="35%">
+      <stop offset="0%" stop-color="#FFF7B1"/>
+      <stop offset="40%" stop-color="#FFD66B"/>
+      <stop offset="100%" stop-color="#FFD66B" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Ocean gradient -->
+    <linearGradient id="sunrise-ocean" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2A4A73"/>
+      <stop offset="70%" stop-color="#4C7EB6"/>
+      <stop offset="100%" stop-color="#8EC5FF"/>
+    </linearGradient>
+
+    <!-- Sun reflection gradient -->
+    <linearGradient id="sunrise-reflect" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFE59A" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFE59A" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Cloud blur -->
+    <filter id="sunrise-cloud-blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+
+    <!-- Soft rays -->
+    <radialGradient id="sunrise-ray-grad" cx="50%" cy="60%" r="60%">
+      <stop offset="0%" stop-color="#FFE59A" stop-opacity="0.6"/>
+      <stop offset="70%" stop-color="#FFE59A" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#FFE59A" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Subtle grain texture -->
+    <filter id="sunrise-grain" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.08"/>
+      </feComponentTransfer>
+    </filter>
+
+    <!-- Water ripple mask -->
+    <filter id="sunrise-ripples" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="turbulence" baseFrequency="0.01 0.08" numOctaves="2" seed="5"/>
+      <feDisplacementMap in="SourceGraphic" scale="8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#circleMask)">
+    <!-- Sky -->
+    <rect width="800" height="420" fill="url(#sunrise-sky)"/>
+
+    <!-- Rays (subtle vignette) -->
+    <rect width="800" height="420" fill="url(#sunrise-ray-grad)"/>
+
+    <!-- Clouds -->
+    <g filter="url(#sunrise-cloud-blur)" opacity="0.5">
+      <ellipse cx="160" cy="120" rx="120" ry="40" fill="#FFFFFF"/>
+      <ellipse cx="230" cy="130" rx="90" ry="32" fill="#FFFFFF"/>
+      <ellipse cx="600" cy="90" rx="140" ry="44" fill="#FFFFFF"/>
+      <ellipse cx="520" cy="110" rx="100" ry="34" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Sun + glow at horizon -->
+    <circle cx="400" cy="330" r="120" fill="url(#sunrise-sun)"/>
+
+    <!-- Ocean -->
+    <rect x="0" y="380" width="800" height="220" fill="url(#sunrise-ocean)"/>
+
+    <!-- Horizon line -->
+    <rect x="0" y="380" width="800" height="2" fill="#FFE7C6" opacity="0.6"/>
+
+    <!-- Sun reflection streaks on water -->
+    <g opacity="0.65">
+      <rect x="360" y="390" width="80" height="8" fill="url(#sunrise-reflect)"/>
+      <rect x="340" y="410" width="120" height="8" fill="url(#sunrise-reflect)"/>
+      <rect x="320" y="430" width="160" height="9" fill="url(#sunrise-reflect)"/>
+      <rect x="300" y="452" width="200" height="10" fill="url(#sunrise-reflect)"/>
+      <rect x="280" y="476" width="240" height="12" fill="url(#sunrise-reflect)"/>
+      <rect x="260" y="502" width="280" height="14" fill="url(#sunrise-reflect)"/>
+    </g>
+
+    <!-- Gentle ripples -->
+    <g filter="url(#sunrise-ripples)" opacity="0.4">
+      <rect x="0" y="380" width="800" height="220" fill="#FFFFFF" opacity="0.08"/>
+    </g>
+
+    <!-- Grain overlay (very subtle) -->
+    <rect width="800" height="600" filter="url(#sunrise-grain)" opacity="0.16"/>
   </g>
 </svg>
+
