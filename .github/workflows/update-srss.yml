@@ -5,10 +5,12 @@ on:
     - cron: '0 2 * * *'  # 2:00 UTC = 10:00 PM EDT (adjust if needed)
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   update-srss:
     runs-on: windows-latest
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -17,10 +19,14 @@ jobs:
         run: |
           .\srss.exe -dr 1 -o ".\_data\srss.json"
 
+      - name: Set up GitHub credentials
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+
       - name: Commit and push if changed
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add _data/srss.json
           git diff --cached --quiet || git commit -m "Update srss.json [auto]"
           git push
