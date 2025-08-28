@@ -1,0 +1,26 @@
+name: Update SRSS Data
+
+on:
+  schedule:
+    - cron: '0 2 * * *'  # 2:00 UTC = 10:00 PM EDT (adjust if needed)
+  workflow_dispatch:
+
+jobs:
+  update-srss:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Run srss.exe to generate srss.json
+        run: |
+          .\srss.exe -dr 1 -o ".\_data\srss.json"
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _data/srss.json
+          git diff --cached --quiet || git commit -m "Update srss.json [auto]"
+          git push
