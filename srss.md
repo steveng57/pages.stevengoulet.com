@@ -5,7 +5,7 @@ description: Sunrise and Sunset calculations for a given location, defaulting to
 ---
 
 {% assign srss = site.data.srss %}
-<div class="container my-5 p-4 bg-light rounded shadow">
+<div class="post-preview row g-0 flex-md-row-reverse position-relative overflow-hidden">
   <h2 class="display-5 text-warning mb-4 text-center">Sunrise &amp; Sunset</h2>
   <div class="row mb-3 justify-content-center align-items-center">
   <div class="col-auto fw-bold text-primary h5 mb-0">Date:</div>
