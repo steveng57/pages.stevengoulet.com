@@ -15,6 +15,9 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      - name: List files in current directory
+        run: ls -l
+
       - name: Make srss executable
         run: chmod +x ./srss
 
