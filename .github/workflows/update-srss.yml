@@ -10,14 +10,14 @@ permissions:
 
 jobs:
   update-srss:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Run srss.exe to generate srss.json
+      - name: Run srss to generate srss.json
         run: |
-          .\srss.exe -o ".\_data\srss.json"
+          ./srss -o "./_data/srss.json"
 
       - name: Set up GitHub credentials
         run: |
