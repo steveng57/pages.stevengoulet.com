@@ -15,6 +15,9 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      - name: Make srss executable
+        run: chmod +x ./srss
+
       - name: Run srss to generate srss.json
         run: |
           ./srss -o "./_data/srss.json"
