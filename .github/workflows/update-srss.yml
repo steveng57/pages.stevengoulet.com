@@ -18,12 +18,12 @@ jobs:
       - name: List files in current directory
         run: ls -l
 
-      - name: Make srss executable
-        run: chmod +x ./srss
+      - name: Make srss-gen executable
+        run: chmod +x ./srss-gen
 
-      - name: Run srss to generate srss.json
+      - name: Run srss-gen to generate srss.json
         run: |
-          ./srss -o "./_data/srss.json"
+          ./srss-gen -o "./_data/srss.json"
 
       - name: Set up GitHub credentials
         run: |
