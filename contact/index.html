@@ -1,0 +1,218 @@
+---
+layout: default
+title: Contact
+permalink: /contact/
+---
+
+<!-- Load Cloudflare Turnstile script -->
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
+<script>
+  // Turnstile success callback (referenced via data-callback)
+  window.onTurnstileSuccess = function() {
+    const form = document.getElementById('contact-form');
+    const submitBtn = form ? form.querySelector('button[type="submit"]') : null;
+    if (submitBtn) submitBtn.disabled = false;
+  };
+
+  window.onTurnstileError = function() {
+    alert('Security verification failed to load. Please refresh the page and try again.');
+  };
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contact-form');
+    const submitBtn = form ? form.querySelector('button[type="submit"]') : null;
+    const emailInput = document.getElementById('contact-email');
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const subjectInput = document.getElementById('contact-subject');
+    const emailCacheKey = 'sjg-contact-email';
+    const emailStorageTestKey = `${emailCacheKey}-check`;
+
+    const canUseLocalStorage = (() => {
+      try {
+        window.localStorage.setItem(emailStorageTestKey, '1');
+        window.localStorage.removeItem(emailStorageTestKey);
+        return true;
+      } catch (err) {
+        return false;
+      }
+    })();
+
+    const readCachedEmail = () => {
+      if (!canUseLocalStorage) return '';
+      try {
+        return window.localStorage.getItem(emailCacheKey) || '';
+      } catch (err) {
+        return '';
+      }
+    };
+
+    const writeCachedEmail = value => {
+      if (!canUseLocalStorage) return;
+      try {
+        if (value) {
+          window.localStorage.setItem(emailCacheKey, value);
+        } else {
+          window.localStorage.removeItem(emailCacheKey);
+        }
+      } catch (err) {
+        /* ignore storage failures */
+      }
+    };
+
+    if (submitBtn) submitBtn.disabled = true;
+
+    if (!form) {
+      return;
+    }
+
+    if (emailInput) {
+      const cachedEmail = readCachedEmail();
+      if (cachedEmail && !emailInput.value) {
+        emailInput.value = cachedEmail;
+        emailInput.dispatchEvent(new Event('input', { bubbles: true }));
+      }
+
+      emailInput.addEventListener('input', function() {
+        const emailValue = emailInput.value;
+        const normalizedEmail = emailValue.trim();
+        const isValidEmail =
+          normalizedEmail === emailValue &&
+          !!normalizedEmail &&
+          emailPattern.test(normalizedEmail) &&
+          normalizedEmail.length <= 320;
+
+        if (!isValidEmail) {
+          emailInput.setCustomValidity('Enter a valid email address.');
+          if (!normalizedEmail) {
+            writeCachedEmail('');
+          }
+        } else {
+          emailInput.setCustomValidity('');
+          if (normalizedEmail !== emailValue) {
+            emailInput.value = normalizedEmail;
+          }
+          writeCachedEmail(normalizedEmail);
+        }
+      });
+    }
+
+    if (subjectInput) {
+      subjectInput.addEventListener('input', function() {
+        if (!subjectInput.value.trim()) {
+          subjectInput.setCustomValidity('Subject is required.');
+        } else {
+          subjectInput.setCustomValidity('');
+        }
+      });
+    }
+
+    form.addEventListener('submit', function(event) {
+      const turnstileResponse = form.querySelector('input[name="cf-turnstile-response"]');
+
+      if (emailInput && (!emailInput.value || !emailPattern.test(emailInput.value) || emailInput.value.length > 320)) {
+        event.preventDefault();
+        emailInput.reportValidity();
+        return;
+      }
+
+      if (subjectInput && !subjectInput.value.trim()) {
+        event.preventDefault();
+        subjectInput.reportValidity();
+        return;
+      }
+
+      if (!turnstileResponse || !turnstileResponse.value) {
+        event.preventDefault();
+        alert('Please complete the security verification.');
+        return;
+      }
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+      }
+    });
+  });
+</script>
+
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-7 col-md-9">
+      <div class="text-center mb-4">
+        <h2 class="mb-2">Get in touch</h2>
+        <p class="text-muted mb-0">Have a question, suggestion, or message? Send it below.</p>
+      </div>
+
+      <form action="/api/contact" method="POST" id="contact-form" class="shadow-sm p-4 p-md-5 sjg-search-like">
+        <div class="mb-3">
+          <label for="contact-email" class="form-label">Your Email</label>
+          <div class="input-group sjg-search-like-group">
+            <span class="input-group-text border-0 bg-transparent"><i class="fas fa-envelope"></i></span>
+            <input
+              id="contact-email"
+              name="email"
+              type="email"
+              required
+              placeholder="your@email.com"
+              class="form-control bg-transparent border-0 shadow-sm"
+              style="color: var(--text-color);"
+              autocomplete="off"
+              aria-label="email">
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="contact-subject" class="form-label">Subject</label>
+          <div class="input-group sjg-search-like-group">
+            <span class="input-group-text border-0 bg-transparent"><i class="fas fa-bookmark"></i></span>
+            <input
+              id="contact-subject"
+              name="subject"
+              type="text"
+              required
+              placeholder="What can I help with?"
+              class="form-control bg-transparent border-0 shadow-sm"
+              style="color: var(--text-color);"
+              autocomplete="off"
+              maxlength="120">
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="contact-message" class="form-label">Your Message</label>
+          <div class="input-group align-items-start sjg-search-like-group">
+            <span class="input-group-text border-0 bg-transparent"><i class="fas fa-comment-dots"></i></span>
+            <textarea
+              id="contact-message"
+              name="message"
+              required
+              placeholder="Write your message..."
+              class="form-control bg-transparent rounded-4 border-0 shadow-sm"
+              style="color: var(--text-color);"
+              rows="5"
+              aria-label="message"
+            ></textarea>
+          </div>
+        </div>
+
+        <!-- Honeypot -->
+        <input type="text" name="nickname" autocomplete="off" class="d-none">
+
+        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+
+        <!-- Cloudflare Turnstile -->
+        {% assign sitekey = site.turnstile_site_key | default: site.env.TURNSTILE_SITE_KEY | default: site.env.turnstile_site_key %}
+        {% if sitekey and sitekey != '' %}
+        <div class="cf-turnstile mt-3" data-sitekey="{{ sitekey }}" data-theme="auto" data-callback="onTurnstileSuccess" data-error-callback="onTurnstileError"></div>
+        {% else %}
+        <p class="text-danger small mt-3">Security check unavailable: TURNSTILE_SITE_KEY not configured.</p>
+        {% endif %}
+      </form>
+    </div>
+  </div>
+</div>
+
+<noscript>
+  <div class="text-danger">JavaScript is required to display the security verification.</div>
+</noscript>
