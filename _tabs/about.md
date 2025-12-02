@@ -7,7 +7,7 @@ order: 4
 > This website has been created in wake of the newly declared trade war from the US Administration against Canada
 {: .prompt-tip }
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 If you'd like to drop me a note with a comment or connect, please use the [contact form](/contact/) here.
 
