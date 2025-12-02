@@ -8,7 +8,7 @@ categories: [Politics, US]
 tags: [Politics, Canada, US, Trade, Fentanyl]
 media_subpath: /assets/img/posts/the-fentanyl-lie
 image:
-  path: fentanyl.jpeg
+  path: fentanyl.avif
   alt: The Fentanyl Lie
 ---
 # The Fentanyl Lie

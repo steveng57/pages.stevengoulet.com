@@ -8,7 +8,7 @@ categories: [Politics, US]
 tags: [Politics, Canada, US, Trade]
 media_subpath: /assets/img/posts/cdn-us-trade-numbers
 image:
-  path: cdn-us-trade-numbers.jpeg
+  path: cdn-us-trade-numbers.avif
   alt: Real Trade Numbers
 ---
 ## Canada / US Trade
@@ -28,7 +28,7 @@ With increased revenues from Canadian oil, this changed in 2008, with Canada hav
 - Negative numbers are a Canada surplus / US deficit.  
 - Note that these numbers are for products only, and do not include services.  If services revenue were included, the number would be tilted much more to a US surplus (roughly an additional $20B US in 2023).
 
-{% include html-side.html img="cdn-us-trade-numbers.jpeg" align = "center-full" caption = "Canada / US Trade from 9161 to 2023 (click to zoom)"%}
+{% include html-side.html img="cdn-us-trade-numbers.avif" align = "center-full" caption = "Canada / US Trade from 9161 to 2023 (click to zoom)"%}
 
 ## The Data
 

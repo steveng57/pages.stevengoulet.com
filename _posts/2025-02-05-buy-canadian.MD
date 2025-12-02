@@ -7,7 +7,7 @@ last_modified_at: 2025-02-05 18:40:07 -0500
 categories: [Politics, US]
 tags: [Politics, Canada, US, Tariffs]
 image:
-  path: Canadian Flag - Wavy.jpeg
+  path: Canadian Flag - Wavy.avif
   alt: Buy Canadian
 media_subpath: /assets/img/posts/buy-canadian
 ---
@@ -37,4 +37,4 @@ Yes, I fully appreciate the irony of sending you to US based Social Media, but t
 
 ## A Handy Chart
 
-{% include html-side.html img="buy-canadian-brands.jpeg" align = "center-wide" caption = "Buy Canadian" %}
+{% include html-side.html img="buy-canadian-brands.avif" align = "center-wide" caption = "Buy Canadian" %}

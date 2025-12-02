@@ -7,7 +7,7 @@ last_modified_at: 2025-02-06 10:40:07 -0500
 categories: [Politics, US]
 tags: [Politics, Canada, US, Tariffs]
 image:
-  path: loonie-toonie.png
+  path: loonie-toonie.avif
   alt: Money
 media_subpath: /assets/img/posts/how-we-spend-our-money
 ---
