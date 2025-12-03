@@ -135,7 +135,7 @@ class ContactRequestHandler
 
         if (!env.RESEND_API_KEY)
         {
-            return this.ServerError("Resend API key not configured");
+            return this.ServerError("Resend API key not configured!");
         }
 
         const normalizedSubject = this.NormalizeSubject(subject);
