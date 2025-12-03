@@ -205,7 +205,13 @@ exclude:
   - LICENSE
   - rollup.config.js
   - package*.json
-  - serve.cmd
+  - "*.ps1"
+  - "*.cmd"
+  - "*.afphoto"
+  - tsconfig.json
+  - "*.cmd"
+  - assets/img/**/*.jpeg
+  - assets/img/**/*.jpg
 
 jekyll-archives:
   enabled: [categories, tags]
