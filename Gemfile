@@ -7,7 +7,7 @@ gem 'bigdecimal', '~> 3.2', '>= 3.2.2'
 gem 'logger', '~> 1.7'
 gem 'fiddle', '~> 1.1', '>= 1.1.8'
 
-gem 'jekyll-theme-chirpy', '~> 7.3', '>= 7.3.1'
+gem 'jekyll-theme-chirpy', '~> 7.4'
 
 group :test do
   gem 'html-proofer', '~> 5.0', '>= 5.0.10'
@@ -29,6 +29,7 @@ gem 'http_parser.rb', '~> 0.8.0', :platforms => [:jruby]
 
 group :jekyll_plugins do
   gem "jekyll-redirect-from", "~> 0.16"
+  gem 'jekyll-paginate-v2', '~> 3.0'
 end
 
 gem 'jekyll-include-cache', '~> 0.2.1'
