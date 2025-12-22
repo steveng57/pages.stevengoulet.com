@@ -21,7 +21,10 @@
     Disable live reload functionality
 
 .PARAMETER Port
-    Specify the port to serve on (default: 4000)
+    Specify the port to serve on (default: 4001)
+
+.PARAMETER LiveReloadPort
+    Specify the LiveReload port to use (default: 35730)
 
 .PARAMETER HostAddress
     Specify the host to bind to (default: localhost)
@@ -61,7 +64,8 @@ param(
     [switch]$NoDrafts,
     [switch]$NoFuture,
     [switch]$NoLiveReload,
-    [int]$Port = 4000,
+    [int]$Port = 4001,
+    [int]$LiveReloadPort = 35730,
     [string]$HostAddress = "localhost",
     [switch]$Clean,
     [switch]$Production,
@@ -217,6 +221,7 @@ function Build-JekyllCommand {
 
     if (-not $NoLiveReload -and -not $Production) {
         $cmd += "--livereload"
+        $cmd += "--livereload-port", $LiveReloadPort.ToString()
     }
 
     if (-not $NoDrafts -and -not $Production) {
@@ -236,6 +241,10 @@ function Show-StartupInfo {
     Write-Host "==========================" -ForegroundColor Blue
     Write-Info "URL: http://$HostAddress`:$Port"
     Write-Info "Mode: $(if ($Production) { 'Production' } else { 'Development' })"
+
+    if (-not $Production -and -not $NoLiveReload) {
+        Write-Info "LiveReload: http://$HostAddress`:$LiveReloadPort"
+    }
 
     if (-not $Production) {
         Write-Info "Enabled features:"
@@ -272,6 +281,7 @@ function Show-CustomHelp {
     Write-Host ""
     Write-Host "  Server Configuration:" -ForegroundColor Cyan
     Write-Host "    -Port <number>       Specify port to serve on (default: 4000)" -ForegroundColor White
+    Write-Host "    -LiveReloadPort <n>  Specify LiveReload port (default: 35729)" -ForegroundColor White
     Write-Host "    -HostAddress <addr>  Specify host address (default: localhost)" -ForegroundColor White
     Write-Host ""
     Write-Host "  Build Options:" -ForegroundColor Cyan
