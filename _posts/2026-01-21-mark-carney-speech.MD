@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mark Carney Speech in Davos, Switzerland
-description: The transcript of a great speech outlining the truth about the new world order.
+description: The transcript of a great speech outlining the truth about the new world order and the role for Canada therein.
 date: 2026-01-21 11:46:33 -0500
 last_modified_at: 2026-01-21 11:46:36 -0500
 categories: [Politics, Canada]
