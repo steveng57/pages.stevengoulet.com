@@ -21,6 +21,8 @@ Here is the English version in full.  He begins in French.
 ---
 {: style="border-top:2px solid currentColor;" }
 
+<div style="font-family: Georgia, 'Times New Roman', serif;" markdown="1">
+
 It's a pleasure — and a duty — to be with you at this turning point for Canada and for the world.
 
 Today, I'll talk about the rupture in the world order, the end of a nice story and the beginning of a brutal reality where geopolitics among the great powers is not subject to any constraints.
@@ -178,6 +180,8 @@ The powerful have their power. But we have something too — the capacity to sto
 That is Canada's path. We choose it openly and confidently.
 
 And it is a path wide open to any country willing to take it with us.
+
+</div>
 
 ---
 {: style="border-top:2px solid currentColor;" }
