@@ -21,7 +21,7 @@ Here is the English version in full.  He begins in French.
 ---
 {: style="border-top:2px solid currentColor;" }
 
-<div style="font-family: Georgia, 'Times New Roman', serif;" markdown="1">
+<div style="font-family: Georgia, 'Times New Roman', serif; letter-spacing: 0.4px;" markdown="1">
 
 It's a pleasure — and a duty — to be with you at this turning point for Canada and for the world.
 
