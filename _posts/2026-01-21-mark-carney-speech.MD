@@ -12,9 +12,9 @@ image:
   alt: Mark Carney Speech in Davos, Switzerland, January 20, 2026. (Markus Schreiber/The Associated Press)
 ---
 
-Below is the full transcript of the speech Prime Minister Mark Carney gave in Davos, Switzerland on January 20th, 2026.  I find it to be one of the best, honest, and direct speeches of our time.  
+Below is the full transcript of the speech Prime Minister Mark Carney gave in Davos, Switzerland on January 20th, 2026.  A thoughtful and well prepared talk, I find it to be one of the most sobering and insightful speeches of our time.  
 
-Truthful without being inflammatory, sending a warning while being optimistic, he set out a new direction for Canada, and a new way for Canadians to think about their place in the world.  
+Truthful without being inflammatory, sending a warning while being optimistic, he set out a new direction for Canada, and a new way for Canadians to think about our place in the world.  
 
 Here is the English version in full.  He begins in French.
 
