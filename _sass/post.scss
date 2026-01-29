@@ -1,0 +1,291 @@
+/* Figure layout utilities for html-side.html */
+.sjg-figure {
+    display: block;
+    margin: 0 0 1rem 0;
+}
+
+.sjg-figure-left {
+    float: left;
+    margin-right: 1rem;
+}
+
+.sjg-figure-right {
+    float: right;
+    margin-left: 1rem;
+}
+
+.sjg-figure-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sjg-figure-33 {
+    width: 33%;
+}
+
+.sjg-figure-50 {
+    width: 50%;
+}
+
+.sjg-figure-66 {
+    width: 66%;
+}
+
+.sjg-figure-75 {
+    width: 75%;
+}
+
+.sjg-figure-90 {
+    width: 90%;
+}
+
+.sjg-figure-100 {
+    width: 100%;
+}
+
+/* Side-by-side helper spacing (used by html-sxs.html) */
+.sjg-sxs-left,
+.sjg-sxs-right {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .sjg-sxs-left {
+        margin-right: 0.25rem;
+    }
+
+    .sjg-sxs-right {
+        margin-left: 0.25rem;
+    }
+
+    /* Ensure flex-md-row works even without full Bootstrap utilities */
+    .flex-md-row {
+        flex-direction: row !important;
+    }
+}
+
+main img {
+    border-radius: 10px;
+}
+
+/* Constrain home page card preview images to a consistent aspect ratio */
+#post-list .card .col-md-5 {
+    aspect-ratio: 4 / 3;
+    display: flex;
+    align-self: stretch;
+}
+
+#post-list .card .col-md-5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 10px 10px 0;
+}
+
+#post-list .card .preview-img {
+    height: 100%;
+    flex: 1;
+}
+
+#post-list .card .preview-img,
+#post-list .card .preview-img img {
+    border-radius: 10px;
+}
+
+#post-list .card .preview-img>a {
+    position: absolute;
+    inset: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+#post-list .card .preview-img>a.shimmer {
+    padding-top: 0;
+    height: 100%;
+}
+
+#post-list .card .preview-img>a>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#post-list .card .preview-img img {
+    display: block;
+}
+
+/* Remove default anchor underline/border on full-card links */
+.post-preview {
+    border-bottom: none !important;
+}
+
+.post-preview:hover,
+.post-preview:focus,
+.post-preview:active {
+    border-bottom: none !important;
+}
+
+/* Match home page card hover contrast in light/dark modes */
+:root {
+    --card-hover-bg: rgba(0, 0, 0, 0.1);
+}
+
+html[data-mode='dark'] {
+    --card-hover-bg: rgba(255, 255, 255, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+
+    html:not([data-mode]),
+    html[data-mode='dark'] {
+        --card-hover-bg: rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* Search-like form utilities (match Chirpy search box look) */
+.sjg-search-like,
+.sjg-search-like-group {
+    border: 1px solid var(--search-border-color);
+    border-radius: 1rem;
+    background: var(--main-bg);
+}
+
+.sjg-search-like-group {
+    padding: 0 .5rem;
+}
+
+.sjg-search-like .form-control {
+    color: var(--text-color);
+}
+
+.sjg-search-like .form-control::placeholder {
+    color: var(--text-muted);
+    opacity: 0.8;
+}
+
+.sjg-search-like .input-group-text i {
+    color: var(--search-icon-color);
+}
+
+figcaption {
+    font-size: 0.875rem;
+    /* Adjust as needed */
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption,
+.figure-caption {
+    color: var(--text-color);
+}
+
+@media (max-width: 767.98px) {
+
+    .sjg-figure-left,
+    .sjg-figure-right {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+}
+
+/* used to be sjg-video */
+video.embed-video+em {
+    font-size: 0.875rem !important;
+    /* Adjust as needed */
+    color: var(--text-color) !important;
+    text-align: center !important;
+    margin-top: 1rem !important;
+    margin-bottom: 0rem !important;
+}
+
+h3,
+h4 {
+    margin-top: 0.25rem !important;
+    margin-bottom: 0.5em !important;
+}
+
+h3 {
+    font-size: 1.33rem !important;
+}
+
+h4 {
+    font-size: 1.17rem !important;
+}
+
+.sjg-list {
+    list-style: none;
+}
+
+.sjg-list li::before {
+    content: "\2713";
+    /* Unicode check mark */
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.sjg-wrapped {
+    white-space: pre-wrap;
+    font-family: monospace;
+    font-size: 0.9em;
+    line-height: 1.25;
+    background-color: var(--code-bg);
+    color: var(--link-color);
+    padding: 1em;
+    border-radius: 4px;
+}
+
+.sjg-br {
+    margin-bottom: 2.0em;
+}
+
+.sjg-bigtext {
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    margin: 1em 0;
+}
+
+/* --- Series + TOC coexistence ---
+   The Series panel is rendered near the TOC and shares the same sidebar area.
+   Chirpy's default `#toc-wrapper ul li a { padding: ... }` rule is intentionally
+   broad; we narrow its effect by zeroing it out and reapplying it only to the
+   actual TOC nav (`#toc`).
+*/
+
+/* Neutralize TOC link padding for non-TOC lists (e.g. Series). */
+#toc-wrapper ul li>a {
+    padding: 0;
+}
+
+/* Reapply Chirpy's intended padding to actual TOC links only. */
+#toc-wrapper #toc ul li>a {
+    padding: 0.4rem 0 0.4rem 1.25rem;
+}
+
+/* Series panel: mimic Chirpy panel links (e.g. "Recently Updated"). */
+#panel-series {
+    color: var(--text-muted);
+}
+
+#panel-series a {
+    color: inherit;
+
+    /* Chirpy panel links remove the default underline/bottom-border. */
+    text-decoration: none;
+    border-bottom: none;
+}
+
+#panel-series a:hover {
+    /* Match panel behavior: underline effect via border, not text-decoration. */
+    border-bottom: 1px solid currentColor;
+}
