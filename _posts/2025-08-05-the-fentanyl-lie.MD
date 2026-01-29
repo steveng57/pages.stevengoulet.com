@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Fentanyl Lie
-description: The Trump Administration has used the supposed "Fentanyl Crisis" as an excuse for tariffs
+description: The Trump Administration has used the supposed "Fentanyl Crisis" as an excuse for tariffs.
 date: 2025-08-05 11:46:33 -0500
 last_modified_at: 2025-08-05 11:46:33 -0500
 categories: [Politics, US]

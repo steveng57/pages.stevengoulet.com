@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How We Spend Our Money
-description: Thoughts on how and where to spend our money from here on in
+description: Thoughts on how and where to spend our money from here on in.
 date: 2025-02-06 10:40:03 -0500
 last_modified_at: 2025-02-06 10:40:07 -0500
 categories: [Politics, US]

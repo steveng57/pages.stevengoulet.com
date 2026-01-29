@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Canada / US Trade History
-description: A look at Canada vs US trade deficits and surpluses through the years
+description: A look at Canada vs US trade deficits and surpluses through the years.
 date: 2025-02-04 11:46:33 -0500
 last_modified_at: 2025-02-04 11:46:36 -0500
 categories: [Politics, US]

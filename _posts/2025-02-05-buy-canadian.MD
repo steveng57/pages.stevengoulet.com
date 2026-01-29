@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Buy Canadian
-description: Resources to help people buy Canadian made goods and services
+description: Resources to help people buy Canadian made goods and services.
 date: 2025-02-05 18:40:03 -0500
 last_modified_at: 2025-02-05 18:40:07 -0500
 categories: [Politics, US]
